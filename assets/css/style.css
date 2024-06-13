@@ -38,20 +38,29 @@ p2
 
 .Buttons #Header
 {
-    background-color: rgb(255, 187, 0);
-    color: rgb(51, 51, 51);
+    background: transparent;
+    color: rgb(255, 255, 255);
     border-radius: 12px;
     font-size: 15px;
     position: absolute;
     top: 47%;
     left: 50%;
     transform: translateX(-50%) translateY(50%);
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.Buttons #Header:hover
+{
+    color: #000000;
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 10px rgb(255, 153, 0); 0 0 40px rgb(255, 153, 0), 0 0 80px rgb(255, 153, 0);
 }
 
 .Buttons #Footer
 {
-    background-color: rgb(255, 187, 0);
-    color: rgb(51, 51, 51);
+    background: transparent;
+    color: rgb(255, 255, 255);
     border-radius: 12px;
     font-size: 15px;
     position: absolute;
@@ -60,12 +69,19 @@ p2
     transform: translateX(-50%) translateY(50%);
 }
 
+.Buttons #Footer:hover
+{
+    color: #000000;
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 10px rgb(255, 153, 0); 0 0 40px rgb(255, 153, 0), 0 0 80px rgb(255, 153, 0);
+}
+
 .semicircle {
     position: relative;
     background: rgb(51, 51, 51);
     height: 50vh;
   }
-  
+
   .semicircle::before {
     position: absolute;
     content: '';
